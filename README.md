@@ -17,10 +17,10 @@ Edge Cases ⚠
 
 ## 1️⃣ Sum of Elements in a Range [Low, High]
 
-Problem Statement:
+### Problem Statement:
 Given a BST and integers low and high, find the sum of all node values within the inclusive range [low, high].
 
-Solution Approaches:
+### Solution Approaches:
 
 Approach 1 – Recursive DFS
 
@@ -36,7 +36,7 @@ Approach 2 – Optimized using BST property
 Skip entire subtrees that cannot contain values in the range.
 
 
-Complexity:
+### Complexity:
 
 Type	Complexity
 
@@ -44,7 +44,7 @@ Time	O(N) worst case
 Space	O(H) recursion stack
 
 
-Edge Cases:
+### Edge Cases:
 
 🌳 Empty tree → sum = 0
 
@@ -53,7 +53,7 @@ Edge Cases:
 ✅ All nodes in range → sum = sum of all nodes
 
 
-Flowchart:
+### Flowchart:
 
 Start
            |
@@ -79,10 +79,10 @@ Add node.val if in range
 
 ## 2️⃣ Find Closest Element in BST
 
-Problem Statement:
+### Problem Statement:
 Given a BST and a target, find the node value closest to the target.
 
-Approach:
+### Approach:
 
 Recursive:
 
@@ -100,7 +100,7 @@ Traverse down tree using while loop.
 Update closest value if current node is nearer.
 
 
-Complexity:
+### Complexity:
 
 Type	Complexity
 
@@ -108,7 +108,7 @@ Time	O(H) average, O(N) worst
 Space	O(H) recursive, O(1) iterative
 
 
-Flowchart:
+### Flowchart:
 
 Start
           |
@@ -133,10 +133,10 @@ Start
 
 ## 3️⃣ K-th Smallest Element in BST
 
-Problem Statement:
+### Problem Statement:
 Return the k-th smallest element in a BST.
 
-Approach:
+### Approach:
 
 In-order traversal (left → root → right gives sorted order).
 
@@ -152,7 +152,7 @@ Use stack to simulate in-order traversal.
 Stop when k-th node is reached.
 
 
-Complexity:
+### Complexity:
 
 Type	Complexity
 
@@ -160,7 +160,7 @@ Time	O(H + k) average, O(N) worst
 Space	O(H) stack
 
 
-Edge Cases:
+### Edge Cases:
 
 k = 1 → smallest
 
@@ -169,7 +169,7 @@ k = total nodes → largest
 k > total nodes → invalid input
 
 
-Flowchart:
+### Flowchart:
 
 Start
            |
@@ -195,7 +195,7 @@ Start
 
 ## 4️⃣ Validate BST (Two Approaches)
 
-Problem Statement:
+### Problem Statement:
 Check if a binary tree is a valid BST.
 
 Approach 1 – Recursive with Limits:
@@ -212,7 +212,7 @@ Traverse in-order iteratively.
 Previous node value must always be less than current.
 
 
-Complexity:
+### Complexity:
 
 Type	Complexity
 
@@ -220,7 +220,7 @@ Time	O(N)
 Space	O(H)
 
 
-Edge Cases:
+### Edge Cases:
 
 🌳 Empty tree → valid
 
@@ -229,7 +229,7 @@ Single node → valid
 Duplicate values → depends on definition
 
 
-Flowchart (Recursive Limits):
+### Flowchart (Recursive Limits):
 
 Start
          |
@@ -249,10 +249,10 @@ Start
 
 ## 5️⃣ Maximum Sum BST in Binary Tree
 
-Problem Statement:
+### Problem Statement:
 Find the maximum sum of nodes forming a BST in any subtree of a binary tree.
 
-Approach:
+### Approach:
 
 Post-order Traversal:
 
@@ -279,7 +279,7 @@ Valid if left & right subtrees are BST and left.max < node.val < right.min.
 Update maxSum if valid.
 
 
-Complexity:
+### Complexity:
 
 Type	Complexity
 
@@ -287,7 +287,7 @@ Time	O(N)
 Space	O(H)
 
 
-Edge Cases:
+### Edge Cases:
 
 Empty tree → sum = 0
 
@@ -296,7 +296,7 @@ Entire tree is BST → sum = sum of all nodes
 Multiple BST subtrees → choose max sum
 
 
-Flowchart:
+### Flowchart:
 
 Start
            |
