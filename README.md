@@ -1,6 +1,6 @@
 # 🌳 Day 6: Binary Search Tree (BST) Problem Solutions
 
-Welcome to my LeetCode Daily Challenge – Day 7/Day 6!
+Welcome to my LeetCode Daily Challenge – Day 6!
 In this repository, I focused on Binary Search Tree (BST) problems. Each problem includes:
 
 Problem Statement 📜
